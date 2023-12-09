@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+.notificationBar {
+  background: linear-gradient(to bottom, #f5f5f5 0, #d8d7d3 100%);
+}
+.notificationBar .nav-item {
+  position: relative;
+  padding-left: 5px;
+}
+.notificationBar .nav-item .nav-link {
+  font-size: 13px;
+  color: #777;
+  font-weight: 400;
+  margin: 0;
+  line-height: inherit;
+  transition: all 0.3s linear;
+}
+.notificationBar .nav-item .nav-link span {
+  background: #fff;
+  padding: 0px 5px;
+  border-radius: 100%;
+  color: #e76453;
+}
+.notificationBar .nav-item:hover .nav-link {
+  color: #e76453;
+}
+.notificationBar .nav-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: inherit;
+  transform: translate(0%, -50%);
+  width: 1px;
+  height: 40%;
+  background-color: #cbcbcb;
+}
+.notificationBar .nav-item:first-child::before {
+  display: none;
+}
+.notificationBar .dropdown ul {
+  border: 1px solid #e5e5e5;
+}
+.notificationBar .dropdown ul::before {
+  content: "";
+  position: absolute;
+  top: -8%;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  transform: translateY(-5%) rotate(135deg);
+  padding: 0;
+  margin: 0;
+}
+.notificationBar .dropdown ul li a {
+  font-size: 13px;
+  color: #777;
+  font-weight: 400;
+  margin: 0;
+  line-height: inherit;
+}
+.notificationBar .dropdown ul li:hover a {
+  background: transparent;
+  color: #e76453;
+}
+
+.navBar .navbar-brand img {
+  width: 100%;
+}
+.navBar .nav-item {
+  position: relative;
+}
+.navBar .nav-item .services {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navBar .nav-item .services svg {
+  width: 15%;
+  height: auto;
+  margin: 0 0.9em 0 0;
+}
+.navBar .nav-item .services svg g path {
+  fill: rgba(139, 139, 139, 0.8705882353);
+  transition: all 0.2s linear;
+}
+.navBar .nav-item .services p {
+  width: 50%;
+  font-size: 12px;
+  color: rgba(139, 139, 139, 0.8705882353);
+  font-weight: 400;
+  margin: 0;
+  line-height: 15px;
+}
+.navBar .nav-item .services:hover path {
+  fill: #777;
+}
+.navBar .nav-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: inherit;
+  transform: translate(0%, -50%);
+  width: 1px;
+  height: 100%;
+  background-color: #cbcbcb;
+}
+.navBar .nav-item:first-child::before {
+  display: none;
+}
+.navBar .display_item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.navBar .display_item .item {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.navBar .display_item .item svg {
+  width: 15%;
+  height: auto;
+  margin-right: 0.6em;
+}
+.navBar .display_item .item svg g path, .navBar .display_item .item svg g circle {
+  fill: rgba(139, 139, 139, 0.8705882353);
+  transition: all 0.2s linear;
+}
+.navBar .display_item .item p {
+  font-size: 16px;
+  color: #777;
+  font-weight: 600;
+  margin: 0;
+  line-height: inherit;
+}
+.navBar .display_item .item p span {
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  margin: 0;
+  line-height: inherit;
+}
+.navBar .display_item .item:first-child::before {
+  display: none;
+}
+.navBar .display_item form {
+  padding: 8px;
+  grid-column: -3/-1;
+  background: #c2d82e;
+}
+.navBar .display_item form input[type=search] {
+  width: 100%;
+  padding: 2px 0 2px 10px;
+  border: none;
+  font-size: 13px;
+  color: #777;
+  font-weight: 400;
+  margin: 0;
+  line-height: 20px;
+}
+.navBar .display_item form input[type=search]::-moz-placeholder {
+  font-size: 13px;
+  color: #777;
+  font-weight: 400;
+  margin: 0;
+  line-height: 20px;
+}
+.navBar .display_item form input[type=search]::placeholder {
+  font-size: 13px;
+  color: #777;
+  font-weight: 400;
+  margin: 0;
+  line-height: 20px;
+}
+.navBar .display_item form input[type=search]:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+.navBar .display_item form input[type=submit] {
+  background: #e76453;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  line-height: 30px;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 75rem !important;
+}/*# sourceMappingURL=style.css.map */
