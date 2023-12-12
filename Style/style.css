@@ -12,6 +12,7 @@
   font-weight: 400;
   margin: 0;
   line-height: inherit;
+  padding: 10px;
   transition: all 0.3s linear;
 }
 .notificationBar .nav-item .nav-link span {
@@ -191,6 +192,108 @@
   font-weight: 500;
   margin: 0;
   line-height: 30px;
+}
+
+.manueBar {
+  background: linear-gradient(to bottom, #f5f5f5 0, #d8d7d3 100%);
+}
+.manueBar .nav-item {
+  position: relative;
+  padding-left: 0;
+}
+.manueBar .nav-item .nav-link {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  margin: 0;
+  line-height: inherit;
+  padding: 10px;
+  transition: all 0.3s linear;
+}
+.manueBar .nav-item .nav-link span {
+  background: #fff;
+  padding: 0px 5px;
+  border-radius: 100%;
+  color: #e76453;
+}
+.manueBar .nav-item:hover .nav-link {
+  color: #e76453;
+}
+.manueBar .nav-item::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: inherit;
+  transform: translate(0%, -50%);
+  width: 1px;
+  height: 40%;
+  background-color: #cbcbcb;
+}
+.manueBar .nav-item:first-child::before {
+  display: none;
+}
+.manueBar .dropdown ul {
+  border: 1px solid #e5e5e5;
+}
+.manueBar .dropdown ul::before {
+  content: "";
+  position: absolute;
+  top: -8%;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-left: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  transform: translateY(-5%) rotate(135deg);
+  padding: 0;
+  margin: 0;
+}
+.manueBar .dropdown ul li a {
+  font-size: 13px;
+  color: #777;
+  font-weight: 400;
+  margin: 0;
+  line-height: inherit;
+}
+.manueBar .dropdown ul li:hover a {
+  background: transparent;
+  color: #e76453;
+}
+.manueBar .Categories > div {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.manueBar .Categories > div h3 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  margin: 0;
+  line-height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e76453;
+  text-shadow: 0px 0px 1px #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.manueBar .Categories > div h3 div i {
+  color: #e76453;
+  background: #fff;
+  padding: 2px 2px 1px;
+  border-radius: 100%;
+}
+.manueBar .Categories ul {
+  display: inline-block;
+}
+.manueBar .Categories ul li {
+  list-style: none;
+}
+.manueBar .Categories ul li a {
+  text-decoration: none;
 }
 
 * {

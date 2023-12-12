@@ -8,39 +8,8 @@ $border_clr : #e5e5e5;
 $green : #c2d82e;
 
 
-                                    // mixin 
-// @@@@@@@@@@@@ Font Typhography @@@@@@@@@@@@
-@mixin font_typhoraphy($f_size: 13px,$f_clr: $font_clr,$f_weight:400,$l_height:inherit,$mrgn:0) {
-    font-size: $f_size;
-    color: $f_clr;
-    font-weight: $f_weight;
-    margin: $mrgn;
-    line-height: $l_height;
-}
-
-// @@@@@@@@@@@@ Border @@@@@@@@@@@@
-@mixin border($border_sid,$wid:1px,$clr:$border_clr){
-    @if $border_sid == "left"{
-        border-left: 1px solid $border_clr;
-    }
-    @else if $border_sid == "bottom" {
-        border-bottom: 1px solid $border_clr;
-    }
-    @else {
-        border : $wid solid $clr;
-    }
-}
-
-// @@@@@@@@@@@@ seperate line @@@@@@@@@@@@
-@mixin separateLine($tp:50%,$lft:0,$rit:inherit,$x:0%,$y:-50%,$wid:1px,$higt:40%){
-    position: absolute;
-    content: "";
-    top: $tp;
-    left: $lft;
-    right: $rit;
-    transform: translate($x,$y);
-    width: $wid;
-    height: $higt;
-    background-color: $line_clr;
-    
-}
+// font
+$notification_font:13px;
+$navbar_font:12px;
+$navbar_srvc_font:16px;
+$mnueBar_font:15px;
