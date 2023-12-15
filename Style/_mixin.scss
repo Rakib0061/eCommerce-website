@@ -1,107 +1,11 @@
-// @@@@@@@@@@@@ Font Typhography @@@@@@@@@@@@
-@mixin font_typhoraphy($f_size: $notification_font,$f_clr: $font_clr,$f_weight:400,$l_height:inherit,$mrgn:0) {
+@import"./variable";
+
+@mixin font_typhography($f_size:13px,$f_clr:$font_clr,$f_weight:400,$f_higt:1.2,$f_spc:inherit,$mr:0){
+    font-family: Work Sans, sans-serif;
     font-size: $f_size;
     color: $f_clr;
     font-weight: $f_weight;
-    margin: $mrgn;
-    line-height: $l_height;
-}
-
-// @@@@@@@@@@@@ Border @@@@@@@@@@@@
-@mixin border($border_sid,$wid:1px,$clr:$border_clr){
-    @if $border_sid == "left"{
-        border-left: 1px solid $border_clr;
-    }
-    @else if $border_sid == "bottom" {
-        border-bottom: 1px solid $border_clr;
-    }
-    @else {
-        border : $wid solid $clr;
-    }
-}
-
-// @@@@@@@@@@@@ seperate line @@@@@@@@@@@@
-@mixin separateLine($tp:50%,$lft:0,$rit:inherit,$x:0%,$y:-50%,$wid:1px,$higt:40%){
-    position: absolute;
-    content: "";
-    top: $tp;
-    left: $lft;
-    right: $rit;
-    transform: translate($x,$y);
-    width: $wid;
-    height: $higt;
-    background-color: $line_clr;
-    
-}
-
-@mixin nabBar ($n_item_pl:5px,$f_Ty_prompt:()){
-  // using empty list (a sass featcher) for getting value
-      background: $bg_clr;
-      
-      .nav-item {
-        position: relative;
-        padding-left: $n_item_pl;
-    
-        .nav-link {
-          @include font_typhoraphy($f_Ty_prompt...);
-          // using spread operator like as js for collecting all element
-
-          padding: 10px;
-          transition: all 0.3s linear;
-    
-          span {
-            background: #fff;
-            padding: 0px 5px;
-            border-radius: 100%;
-            color: $prime_clr;
-          }
-        }
-    
-        &:hover .nav-link {
-          color: $prime_clr;
-        }
-    
-        &::before {
-          @include separateLine();
-        }
-        &:first-child {
-          &::before {
-            display: none;
-          }
-        }
-      }
-    
-      .dropdown {
-        button {
-        }
-    
-        ul {
-          @include border(all-side);
-    
-          &::before {
-            content: "";
-            position: absolute;
-            top: -8%;
-            right: 10px;
-            width: 15px;
-            height: 15px;
-            background-color: #fff;
-            @include border(left);
-            @include border(bottom);
-            transform: translateY(-5%) rotate(135deg);
-            padding: 0;
-            margin: 0;
-          }
-    
-          li {
-            a {
-              @include font_typhoraphy();
-            }
-            &:hover a {
-              background: transparent;
-              color: $prime_clr;
-            }
-          }
-        }
-      }     
+    line-height: $f_higt;
+    letter-spacing: $f_spc;
+    margin: $mr;
 }

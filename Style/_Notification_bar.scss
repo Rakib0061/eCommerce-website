@@ -1,0 +1,82 @@
+@import './variable';
+@import './Mixin';
+
+.notification_bar {
+    nav {
+        .dropdown{
+            & > a {
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                
+                .all_flag{
+                    position: relative;
+                    width: 18px;
+                    height: 18px;
+        
+                    svg {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translate(0, -50%);
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+                
+                p {
+                    @include font_typhography($f_spc:1px,$mr: 0 5px);
+                }
+        
+                p ~ svg {
+                    width: 5.2%;
+                    height: auto;
+                    transition: all 0.25s ease;
+                    transform-origin: center;
+                }
+                
+            }
+        
+            .dropdown_item {
+                position: relative;
+                ul {
+                    padding: 12px 20px;
+                    position: absolute;
+                    border-radius: 8px;
+                    box-shadow: $box_swdo;
+        
+                    li {
+                        list-style: none;
+                        a {
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            padding: 8px 0 !important;
+            
+                            svg {
+                                width: 12%;
+                                height: auto; 
+                            }
+                            p {
+                                @include font_typhography($f_size:14px,$f_clr:$drpdn_font_clr,$mr: 0 0 0 5px);
+                            }
+                        }
+        
+                        &:hover p{
+                            color: $hvr_clr;
+                        }
+                    }
+        
+                    hr {
+                        margin: 0;
+                        width: 100%;
+                        color: $line_clr;
+                    }
+                }
+            }
+        
+            
+        }
+    }
+}
+
