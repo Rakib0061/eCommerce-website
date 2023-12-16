@@ -17,6 +17,9 @@
   width: 18px;
   height: 18px;
 }
+.notification_bar nav .dropdown > a .all_flag .active {
+  z-index: 1;
+}
 .notification_bar nav .dropdown > a p {
   font-family: Work Sans, sans-serif;
   font-size: 13px;

@@ -22,6 +22,9 @@
                         width: 18px;
                         height: 18px;
                     }
+                    .active {
+                        z-index: 1;
+                    }
                 }
                 
                 p {
