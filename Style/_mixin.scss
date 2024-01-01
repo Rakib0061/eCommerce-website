@@ -1,6 +1,6 @@
 @import"./variable";
 
-@mixin font_typhography($f_size:13px,$f_clr:$font_clr,$f_weight:400,$f_higt:1.2,$f_spc:inherit,$mr:0){
+@mixin font_typhography($f_size:13px,$f_clr:$font_clr,$f_weight:500,$f_higt:1.2,$f_spc:inherit,$mr:0){
     font-family: Work Sans, sans-serif;
     font-size: $f_size;
     color: $f_clr;
